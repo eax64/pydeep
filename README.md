@@ -10,3 +10,17 @@ This little script try to find unsafe module imported inside your safe looking o
 $> ./pydeep.py re
 WARNING: sys (re.sys)
 ```
+
+```
+$> ./pydeep.py json
+WARNING: sys (json.scanner.re.sys)
+WARNING: sys (json.encoder.re.sys)
+```
+
+```
+$> ./pydeep.py logging
+WARNING: sys (logging.warnings.sys)
+WARNING: sys (logging.sys)
+WARNING: os (logging.os)
+WARNING: os (logging.traceback.linecache.os)
+```
