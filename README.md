@@ -1,5 +1,5 @@
 # pydeep
-Search for a sensivive module inside an other module.
+Search for a sensitive module inside an other module.
 
 You're writing a python jail and want to let the user access a whole python module. (without the private attributes)
 It could be safe, but some modules are importing sensible modules (like `re` importing `sys`).
